@@ -146,7 +146,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .grade-card-name { color: #b4b2a7; font-size: 10px; }
 .grade-card-arrow { position: absolute; top: 11px; right: 12px; color: #77766c; font-size: 12px; }
 
-.feed-section { margin-top: 35px; }
+.feed-section { margin-top: 35px; scroll-margin-top: 72px; }
 .feed-heading { margin-bottom: 13px; }
 .feed-controls { display: flex; align-items: center; gap: 13px; }
 .active-filter { color: #929187; font-size: 10px; }
