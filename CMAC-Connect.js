@@ -9,7 +9,7 @@ const samplePosts = [
     category: "School news",
     title: "What’s happening this week",
     body: "Check in with your teachers for this week’s announcements, club meetups, and upcoming school events.",
-    likes: 8,
+    likes: 0,
     timestamp: "School update",
     avatar: "avatar-yellow",
   },
