@@ -1,19 +1,29 @@
-# CMAC Connect
+# CougarConnect
 
-A responsive school-community website prototype for school news and Grades 5–9.
+A responsive school-community website prototype for the CMAC Cougars. It includes a
+home page, searchable news, Grades 5–9 pages, a student showcase, and school resources.
 
 ## Run it
 
 Open `CMAC-Connect.html` in a modern browser. There is no build step or server dependency.
 
-## Prototype notes
+## Prototype limitations
 
-- Grade navigation filters the school feed; the post form lets students add projects,
-  achievements, and school updates.
-- Student posts are stored in the browser's local storage on the current device. They
-  are not shared with other students, and this prototype does not provide sign-in,
-  school-only access, or post moderation.
-- PowerSchool and D2L links go to CBE's portals. The school link opens the CBE school
-  finder; replace it with the school's direct website URL when available.
-- The mascot artwork is a temporary CMAC-inspired mark and can be replaced with the
-  school's official mascot artwork.
+- Student showcase submissions are saved in this browser only. They are not shared
+  with classmates and there is no student sign-in, school-only access, teacher review,
+  or content moderation.
+- Showcase artwork and news are design examples; no student photographs are uploaded.
+  Add image uploads only with a school-approved storage and photo-consent process.
+- Grade announcements and events are clearly labelled placeholders for school-approved
+  information. Replace them with verified details before launch.
+- PowerSchool and D2L link to CBE portals. The school website and handbook cards point
+  to the CBE school finder because CMAC's direct URLs were not provided. Confirm the
+  library link and replace school-specific links with official URLs.
+- The cougar graphic is a temporary illustration. Replace it with the school's
+  approved mascot artwork.
+
+## Before a school-wide launch
+
+The site needs a trusted sign-in system, server-side storage, grade-based access,
+moderation and approval tools, and school approval for privacy, accessibility, and
+student photo policies. Browser storage alone cannot provide a private school community.
