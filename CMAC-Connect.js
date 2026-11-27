@@ -1,4 +1,4 @@
-const STORAGE_KEY = "cougar-connect-showcase-v1";
+const STORAGE_KEY = "cmac-connect-showcase-v1";
 
 const resourceLinks = [
   {
@@ -53,7 +53,7 @@ const stories = [
     id: "story-2",
     category: "Student projects",
     title: "Big ideas start with a first sketch",
-    summary: "From science experiments to creative builds, the Cougar community is full of ideas worth showing off.",
+    summary: "From science experiments to creative builds, the CMAC community is full of ideas worth showing off.",
     date: `Sample · ${getTodayLabel()}`,
     art: "art-ideas",
     alt: "Illustration of a light bulb and creative project shapes",
@@ -73,27 +73,27 @@ const stories = [
 
 const gradeDetails = {
   5: {
-    announcement: "Welcome, Grade 5 Cougars! This is your space to share class projects, celebrate new skills, and keep up with grade updates.",
+    announcement: "Welcome, Grade 5 students! This is your space to share class projects, celebrate new skills, and keep up with grade updates.",
     event: "Add your next class event here",
     work: "Show us what you’re curious about",
   },
   6: {
-    announcement: "Grade 6 Cougars: bring your ideas, questions, and latest creations. Check back with your teachers for class announcements.",
+    announcement: "Grade 6 students: bring your ideas, questions, and latest creations. Check back with your teachers for class announcements.",
     event: "Add your next class event here",
     work: "Share a project you’re proud of",
   },
   7: {
-    announcement: "Grade 7 Cougars: this space is ready for class news, creative projects, and the milestones you reach together.",
+    announcement: "Grade 7 students: this space is ready for class news, creative projects, and the milestones you reach together.",
     event: "Add your next class event here",
     work: "Explore what classmates are making",
   },
   8: {
-    announcement: "Grade 8 Cougars: share your work, support a classmate, and look here for updates from your grade community.",
+    announcement: "Grade 8 students: share your work, support a classmate, and look here for updates from your grade community.",
     event: "Add your next class event here",
     work: "Showcase your latest idea",
   },
   9: {
-    announcement: "Grade 9 Cougars: celebrate your achievements and share the projects, performances, and moments that matter to you.",
+    announcement: "Grade 9 students: celebrate your achievements and share the projects, performances, and moments that matter to you.",
     event: "Add your next class event here",
     work: "Celebrate a Grade 9 achievement",
   },
@@ -159,7 +159,7 @@ function getStudentPosts() {
     if (!Array.isArray(posts)) throw new Error("Saved posts are not in the expected format.");
     return posts;
   } catch (error) {
-    console.error("Could not load CougarConnect showcase posts.", error);
+    console.error("Could not load CMAC-Connect showcase posts.", error);
     showToast("Saved showcase posts could not be loaded from this browser.", true);
     return [];
   }
@@ -241,7 +241,7 @@ function createShowcaseSection(limit = Infinity, grade = "") {
   const heading = makeElement("div", "section-heading");
   const headingCopy = makeElement("div");
   headingCopy.append(makeElement("p", "section-kicker", grade ? "GRADE COMMUNITY" : "STUDENT STORIES"));
-  headingCopy.append(makeElement("h2", "", grade ? "Projects & achievements" : "Made by our Cougars"));
+  headingCopy.append(makeElement("h2", "", grade ? "Projects & achievements" : "Made by our community"));
   heading.append(headingCopy);
   const more = makeElement("a", "text-link", "View showcase ↗");
   more.href = "#showcase";
@@ -306,9 +306,9 @@ function createGradeCards() {
 function createHero() {
   const hero = makeElement("section", "welcome-banner");
   const copy = makeElement("div", "welcome-copy");
-  copy.append(makeElement("div", "eyebrow", "CMAC COUGARS"));
+  copy.append(makeElement("div", "eyebrow", "CMAC COMMUNITY"));
   const heading = makeElement("h1");
-  heading.append(document.createTextNode("CougarConnect"));
+  heading.append(document.createTextNode("CMAC-Connect"));
   heading.append(document.createElement("br"));
   const tagline = makeElement("span", "", "Connect • Create • Celebrate");
   heading.append(tagline);
@@ -319,14 +319,14 @@ function createHero() {
 
   const art = makeElement("div", "welcome-art");
   art.setAttribute("role", "img");
-  art.setAttribute("aria-label", "Illustrated CMAC Cougar mascot");
+  art.setAttribute("aria-label", "Illustrated CMAC mascot");
   art.append(makeElement("span", "art-orbit orbit-one"), makeElement("span", "art-orbit orbit-two"));
   const mascot = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   mascot.setAttribute("viewBox", "0 0 200 200");
   mascot.setAttribute("class", "welcome-mascot");
   mascot.setAttribute("aria-hidden", "true");
   mascot.innerHTML = '<path d="m49 48-23-20-4 49 24-9m105-20 23-20 4 49-24-9" fill="#171714"/><path d="M100 37c-44 0-72 34-72 82v37l27-14 14 34h62l14-34 27 14v-37c0-48-28-82-72-82Z" fill="#171714"/><path d="M66 103h.5m67-.5h.5" stroke="#F0D66E" stroke-width="13" stroke-linecap="round"/><path d="M82 130c10 9 26 9 36 0" stroke="#F0D66E" stroke-width="8" stroke-linecap="round"/>';
-  art.append(mascot, makeElement("span", "mascot-caption", "CMAC COUGARS"));
+  art.append(mascot, makeElement("span", "mascot-caption", "CMAC COMMUNITY"));
   hero.append(copy, art);
   return hero;
 }
@@ -415,7 +415,7 @@ function renderShowcase() {
   const copy = makeElement("div");
   copy.append(
     makeElement("p", "section-kicker", "STUDENT SHOWCASE"),
-    makeElement("h1", "page-heading", "Made by our Cougars"),
+    makeElement("h1", "page-heading", "Made by our community"),
     makeElement("p", "page-description", "Projects, art, sports, music, and the wins worth celebrating."),
   );
   const share = makeElement("button", "button button-yellow", "＋ Share your story");
@@ -445,7 +445,7 @@ function renderResources() {
 
 function renderFooter() {
   const footer = makeElement("footer", "page-footer");
-  footer.append(makeElement("span", "", "COUGARCONNECT · CMAC COUGARS"));
+  footer.append(makeElement("span", "", "CMAC-CONNECT · CMAC COMMUNITY"));
   const cbe = makeElement("a", "", "Calgary Board of Education ↗");
   cbe.href = "https://www.cbe.ab.ca/";
   cbe.target = "_blank";
@@ -465,7 +465,7 @@ function currentRoute() {
 function updateNavigation(route) {
   const routeName = route.page === "grade" ? `GRADE ${route.grade}` : route.page.toUpperCase();
   pageTitle.textContent = routeName;
-  document.title = `${route.page === "grade" ? `Grade ${route.grade}` : routeName[0] + routeName.slice(1).toLowerCase()} | CougarConnect`;
+  document.title = `${route.page === "grade" ? `Grade ${route.grade}` : routeName[0] + routeName.slice(1).toLowerCase()} | CMAC-Connect`;
   navLinks.forEach((link) => {
     const selected = route.page === "grade"
       ? link.dataset.page === "grade" && link.dataset.grade === route.grade
@@ -533,7 +533,7 @@ postForm.addEventListener("submit", (event) => {
     const posts = getStudentPosts();
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify([post, ...posts]));
   } catch (error) {
-    console.error("Could not save CougarConnect showcase post.", error);
+    console.error("Could not save CMAC-Connect showcase post.", error);
     showToast("Your story couldn’t be saved. Check browser storage and try again.", true);
     return;
   }

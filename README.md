@@ -1,7 +1,7 @@
-# CougarConnect
+# CMAC-Connect
 
-A responsive school-community website prototype for the CMAC Cougars. It includes a
-home page, searchable news, Grades 5–9 pages, a student showcase, and school resources.
+A personal, responsive school-community website prototype for CMAC. It demonstrates
+a home page, searchable news, Grades 5–9 pages, a student showcase, and school resources.
 
 ## Run it
 
@@ -22,8 +22,8 @@ Open `CMAC-Connect.html` in a modern browser. There is no build step or server d
 - The cougar graphic is a temporary illustration. Replace it with the school's
   approved mascot artwork.
 
-## Before a school-wide launch
+## Future implementation
 
-The site needs a trusted sign-in system, server-side storage, grade-based access,
-moderation and approval tools, and school approval for privacy, accessibility, and
-student photo policies. Browser storage alone cannot provide a private school community.
+The prototype could later add trusted sign-in, server-side storage, grade-based access,
+moderation and approval tools, and student photo uploads. For this personal demonstration,
+browser storage is intentionally used so the interactions can be explored immediately.
