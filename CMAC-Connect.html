@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="CMAC Connect is a place for students to share school news, projects, and achievements."
+    />
+    <meta name="theme-color" content="#11110f" />
+    <title>CMAC Connect — Our school, our stories</title>
+    <link rel="stylesheet" href="CMAC-Connect.css" />
+    <script src="CMAC-Connect.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#news" aria-label="CMAC Connect home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M12 9 7 5l-1 13 6-2m24-7 5-4 1 13-6-2" fill="currentColor" />
+              <path d="M24 7c-10 0-17 8-17 19v9l6-3 3 8h16l3-8 6 3v-9C41 15 34 7 24 7Z" fill="currentColor" />
+              <path d="M17 23h.1M31 23h.1M20 31c2.5 2 5.5 2 8 0" stroke="#11110F" stroke-width="3" stroke-linecap="round" />
+            </svg>
+          </span>
+          <span class="brand-copy"><strong>CMAC</strong><span>CONNECT</span></span>
+        </a>
+
+        <p class="nav-label">YOUR SCHOOL</p>
+        <nav class="primary-nav">
+          <a class="nav-link is-active" href="#news" data-page="news" aria-current="page">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H20v15H5.5A1.5 1.5 0 0 1 4 17.5v-12ZM7 8h10M7 11h10M7 14h6" /></svg>
+            <span>News feed</span>
+          </a>
+          <a class="nav-link" href="#grade-5" data-page="grade" data-grade="5">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 12h8M8 15h4" /></svg>
+            <span>Grade 5</span>
+          </a>
+          <a class="nav-link" href="#grade-6" data-page="grade" data-grade="6">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 12h8M8 15h4" /></svg>
+            <span>Grade 6</span>
+          </a>
+          <a class="nav-link" href="#grade-7" data-page="grade" data-grade="7">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 12h8M8 15h4" /></svg>
+            <span>Grade 7</span>
+          </a>
+          <a class="nav-link" href="#grade-8" data-page="grade" data-grade="8">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 12h8M8 15h4" /></svg>
+            <span>Grade 8</span>
+          </a>
+          <a class="nav-link" href="#grade-9" data-page="grade" data-grade="9">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 12h8M8 15h4" /></svg>
+            <span>Grade 9</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <p class="nav-label">QUICK LINKS</p>
+          <a class="quick-link" href="https://sis.cbe.ab.ca/public/home.html" target="_blank" rel="noopener noreferrer">
+            <span class="quick-link-icon" aria-hidden="true">↗</span> PowerSchool
+          </a>
+          <a class="quick-link" href="https://d2l.cbe.ab.ca/" target="_blank" rel="noopener noreferrer">
+            <span class="quick-link-icon" aria-hidden="true">↗</span> CBE D2L
+          </a>
+          <a class="quick-link" href="https://www.cbe.ab.ca/schools/Pages/default.aspx" target="_blank" rel="noopener noreferrer">
+            <span class="quick-link-icon" aria-hidden="true">↗</span> CBE school finder
+          </a>
+          <div class="school-note">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Made for our school community</span>
+          </div>
+        </div>
+      </aside>
+
+      <main id="main-content" class="main-content">
+        <header class="topbar">
+          <button class="mobile-menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          </button>
+          <div class="breadcrumb"><span>CMAC CONNECT</span><span class="breadcrumb-divider">/</span><span id="breadcrumb-current">NEWS FEED</span></div>
+          <a class="topbar-school-link" href="https://www.cbe.ab.ca/schools/Pages/default.aspx" target="_blank" rel="noopener noreferrer">
+            CBE school finder <span aria-hidden="true">↗</span>
+          </a>
+        </header>
+
+        <div class="content-wrap">
+          <section class="welcome-banner" aria-labelledby="welcome-title">
+            <div class="welcome-copy">
+              <div class="eyebrow"><span class="eyebrow-line"></span> OUR SCHOOL, OUR STORIES</div>
+              <h1 id="welcome-title">Hey, CMAC.<br /><span>What’s happening?</span></h1>
+              <p>A place to catch up, show what you’re making, and celebrate each other.</p>
+              <button class="button button-dark" type="button" data-open-post>
+                <span aria-hidden="true">＋</span> Share something
+              </button>
+            </div>
+            <div class="welcome-art" aria-hidden="true">
+              <span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span>
+              <span class="art-sparkle sparkle-one">✳</span><span class="art-sparkle sparkle-two">✦</span>
+              <svg class="welcome-mascot" viewBox="0 0 200 200" fill="none">
+                <path d="m49 48-23-20-4 49 24-9m105-20 23-20 4 49-24-9" fill="#171714" />
+                <path d="M100 37c-44 0-72 34-72 82v37l27-14 14 34h62l14-34 27 14v-37c0-48-28-82-72-82Z" fill="#171714" />
+                <path d="M66 103h.5m67-.5h.5" stroke="#F6C945" stroke-width="13" stroke-linecap="round" />
+                <path d="M82 130c10 9 26 9 36 0" stroke="#F6C945" stroke-width="8" stroke-linecap="round" />
+                <path d="m100 106-8 12h16l-8-12Z" fill="#F6C945" />
+              </svg>
+              <span class="mascot-caption">CMAC<br />CREW</span>
+            </div>
+            <div class="banner-index" aria-hidden="true">01 / CONNECT</div>
+          </section>
+
+          <section class="stories-section" aria-label="Browse school grades">
+            <div class="section-heading">
+              <div><p class="section-kicker">YOUR PEOPLE</p><h2>Explore by grade</h2></div>
+              <span class="section-aside">GRADES 5—9</span>
+            </div>
+            <div class="grade-row">
+              <button class="grade-card grade-card-all is-selected" type="button" data-grade-filter="all">
+                <span class="grade-card-number">ALL</span><span class="grade-card-name">Everyone</span><span class="grade-card-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="grade-card" type="button" data-grade-filter="5"><span class="grade-card-number">05</span><span class="grade-card-name">Grade 5</span><span class="grade-card-arrow" aria-hidden="true">↗</span></button>
+              <button class="grade-card" type="button" data-grade-filter="6"><span class="grade-card-number">06</span><span class="grade-card-name">Grade 6</span><span class="grade-card-arrow" aria-hidden="true">↗</span></button>
+              <button class="grade-card" type="button" data-grade-filter="7"><span class="grade-card-number">07</span><span class="grade-card-name">Grade 7</span><span class="grade-card-arrow" aria-hidden="true">↗</span></button>
+              <button class="grade-card" type="button" data-grade-filter="8"><span class="grade-card-number">08</span><span class="grade-card-name">Grade 8</span><span class="grade-card-arrow" aria-hidden="true">↗</span></button>
+              <button class="grade-card" type="button" data-grade-filter="9"><span class="grade-card-number">09</span><span class="grade-card-name">Grade 9</span><span class="grade-card-arrow" aria-hidden="true">↗</span></button>
+            </div>
+          </section>
+
+          <section class="feed-section" aria-labelledby="feed-title">
+            <div class="section-heading feed-heading">
+              <div><p class="section-kicker">THE LATEST</p><h2 id="feed-title">School news & stories</h2></div>
+              <div class="feed-controls">
+                <span id="active-filter" class="active-filter">All grades</span>
+                <button class="button button-yellow button-small" type="button" data-open-post><span aria-hidden="true">＋</span> New post</button>
+              </div>
+            </div>
+            <div id="post-list" class="post-list" aria-live="polite"></div>
+            <p class="demo-notice"><span aria-hidden="true">ⓘ</span> Demo: posts are saved only in this browser. Sign-in and school approval are needed before sharing with the whole school.</p>
+          </section>
+          <footer class="page-footer">
+            <span>CMAC CONNECT <span class="footer-dot">•</span> A LITTLE MORE CONNECTED</span>
+            <a href="https://www.cbe.ab.ca/" target="_blank" rel="noopener noreferrer">Calgary Board of Education <span aria-hidden="true">↗</span></a>
+          </footer>
+        </div>
+      </main>
+    </div>
+
+    <dialog class="post-dialog" aria-labelledby="dialog-title">
+      <form id="post-form">
+        <div class="dialog-header">
+          <div><p class="section-kicker">ADD TO THE STORY</p><h2 id="dialog-title">Share something</h2></div>
+          <button class="dialog-close" type="button" aria-label="Close dialog" data-close-post>×</button>
+        </div>
+        <label for="post-title">What are you sharing?</label>
+        <input id="post-title" name="title" type="text" maxlength="90" placeholder="Give your post a title" required />
+        <label for="post-body">A little more about it</label>
+        <textarea id="post-body" name="body" rows="4" maxlength="500" placeholder="Tell us about your project or achievement…" required></textarea>
+        <div class="form-row">
+          <div class="form-field"><label for="post-grade">Your grade</label><select id="post-grade" name="grade" required><option value="" disabled selected>Select a grade</option><option value="5">Grade 5</option><option value="6">Grade 6</option><option value="7">Grade 7</option><option value="8">Grade 8</option><option value="9">Grade 9</option></select></div>
+          <div class="form-field"><label for="post-category">Post type</label><select id="post-category" name="category"><option>Project</option><option>Achievement</option><option>School news</option></select></div>
+        </div>
+        <p class="privacy-hint">Keep it kind and school-appropriate. Don’t include private information. This demo saves your post on this device only.</p>
+        <div class="dialog-actions"><button class="button button-quiet" type="button" data-close-post>Cancel</button><button class="button button-yellow" type="submit">Share post <span aria-hidden="true">↗</span></button></div>
+      </form>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
